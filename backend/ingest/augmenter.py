@@ -13,4 +13,4 @@ def augmented_response(query,retreived_chunks):
         output.append(chunk["content"])
         output.append("-"*40)
     
-    return "\n".join(output) 
+    return "\n".join(output)  
