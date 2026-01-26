@@ -1,4 +1,4 @@
-from embedder import embed_text
+from backend.ingest.embedder import embed_text
 from ingest.loader import load_codebase
 from ingest.chunker import chunk_code
 

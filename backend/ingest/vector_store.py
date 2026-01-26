@@ -27,7 +27,7 @@ def create_collection(vector_size):
 def store_chunks(chunks,embed_functions):
     points = []
     for idx,chunk in enumerate(chunks):
-        vector = embed_functions(chunks["content"])
+        vector = embed_functions(chunk["content"])
 
         points.append({
             "id":idx,
@@ -40,6 +40,6 @@ def store_chunks(chunks,embed_functions):
         })
     
     client.upsert(
-        collection_name=COLLECTION_NAME,
+        collection_name=COLLECTION_NAME, 
         points=points 
     )
