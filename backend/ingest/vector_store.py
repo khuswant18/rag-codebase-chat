@@ -21,9 +21,6 @@ def create_collection(vector_size):
 
         )
 
-
-
-
 def store_chunks(chunks,embed_functions):
     points = []
     for idx,chunk in enumerate(chunks):
