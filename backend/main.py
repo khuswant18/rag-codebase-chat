@@ -19,6 +19,8 @@ def query_codebase(request:QueryRequest):
     retrieved = retrieve_chunks(request.question)
     response = augmented_response(request.question,retrieved)
 
+    print(response)
+    
     return {
         "question":request.question,
         "results":response

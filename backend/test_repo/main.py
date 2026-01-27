@@ -1,2 +1,2 @@
-def login_user(username, password):
+def login_user(username):
     print("logging in", username)
