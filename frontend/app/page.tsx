@@ -73,9 +73,9 @@ export default function Home() {
 
       {response?.results && (
   <pre className="mt-6 p-4 bg-white border rounded overflow-x-auto">
-    {response.results}
-  </pre>
+    {response.results} 
+  </pre> 
 )}
     </main>
   );
-}
+} 
