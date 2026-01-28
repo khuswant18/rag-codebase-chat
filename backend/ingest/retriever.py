@@ -3,12 +3,8 @@ from qdrant_client import QdrantClient
 from qdrant_client.http.exceptions import ResponseHandlingException
 COLLECTION_NAME = "code_chunks"
 
-
-
 def get_client():
     return QdrantClient(host="localhost", port=6333)
-
-
 
 
 def retrieve_chunks(query,top_k=3,threshold=0.4):

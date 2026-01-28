@@ -19,13 +19,13 @@ def create_collection(vector_size):
                 distance=Distance.COSINE
             )
 
-        )
-
+        )  
+         
 def store_chunks(chunks,embed_functions):
-    points = []
+    points = [] 
     for idx,chunk in enumerate(chunks):
         vector = embed_functions(chunk["content"])
-
+  
         points.append({
             "id":idx,
             "vector":vector,
